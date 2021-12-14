@@ -1,1 +1,2 @@
-# Coding-Ninja-Data-Structure-and-Algorithm-in-C++
+# Coding-Ninja-Data-Structure-and-Algorithm
+All the quetion are solved in c++ language
