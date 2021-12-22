@@ -1,0 +1,15 @@
+Recursion	 in	 computer	 science	 is	 a	 method	 where	 the	 solution	 to	 a	 problem depends	on	solutions	to	smaller	instances	of	the	same	problem.	By	same	nature	it	
+actually	means	that	the	approach	that	we	use	to	solve	the	original	problem	can	be	used	to	solve	smaller	problems	as	well.	
+So	 in	 other	 words	 in	 recursion	 a	 function	 calls	 itself	 to	 solve	 smaller	 problems.
+Recursion	is	a	popular	approach	for	solving	problems	because	recursive	solutions	are	generally	easier	to	think	than	their	iterative	counterparts	and	the	code	is	also shorter	and	easier	to	understand
+
+*How does it work
+We	can	define	the	steps	of	a	recursive	solution	as	follows:
+1. Base	Case:	
+A	recursive	function	must	have	a	terminating	condition	at	which the	function	will	stop	calling	itself.	Such	a	condition	is	known	as	a	base	case.
+2. Recursive	Call:
+The	recursive	function	will	recursively	invoke	itself on	the	smaller	version	of	problem.	We	need	to	be	careful	while	writing	this	step	as	it	is	important	to	
+correctly	 figure	 out	 what	 your	 smaller	 problem	 is	 on	 whose	 solution	 the original	problem’s	solution	depends.
+3. Small	Calculation:
+Generally	we	perform	a	some	calculation	step	in	each	recursive	call.	We	can	perform	 this	 calculation	 step	 before	 or	 after	 the	 recursive	 call	 depending	
+upon	the	nature	of	the	problem
