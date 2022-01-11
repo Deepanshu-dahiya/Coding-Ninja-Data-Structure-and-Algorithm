@@ -103,6 +103,8 @@ Student *s1 =new	Student;		 //	Declaration	of	object of	type	Student
 		
 }
 
+![o2](https://user-images.githubusercontent.com/66161514/148993709-de334fb5-824f-438c-a5c0-f04e561441bb.png)
+
 **Constructors**
 
 A	 constructor	 in	 a	 class	 is	means	 of	 initializing	 or	 creating	 objects	 of	 a class. A	
