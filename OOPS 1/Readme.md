@@ -10,4 +10,5 @@ Objects	 are	 real	 world	 entities	 around	 which	 the	 system	 revolves.	 The 
 involved	 are:	 librarian,	 book, member	etc. Hence,	 the	 object-oriented	 approach	
 views	a	problem	in	terms	of	objects	involved	rather	than	procedure	for doing it.
 
-![oops1](https://user-images.githubusercontent.com/66161514/148973067-b96e4102-8cf8-4cab-bb5d-d96f8831cd0e.jpg| width=100)
+![oops1](https://user-images.githubusercontent.com/66161514/148973067-b96e4102-8cf8-4cab-bb5d-d96f8831cd0e.jpg=250*250)
+
