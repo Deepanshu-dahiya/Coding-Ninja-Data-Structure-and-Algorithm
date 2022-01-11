@@ -163,85 +163,114 @@ b	=	20;
 }
 
 int getSum(){
+
 return	a	+	b;
+
 }
-								} ;
-								int main() {
-													Sum obj;																									//explicitly	defined default	constructor	invoked
-								}
+} ;
+
+int main() {
+
+Sum obj;																				
+
+//explicitly	defined default	constructor	invoked
+
+}
+
 Output	:
 constructor	invoked
-In	this	case,	user-defined	default	constructor	will	be	invoked	when	an	object obj of	
-person	 class	 is	 created	 and	 the	 data	 members	 of	 that	 object, a and b,	
-are initialized to	default	values 10 and	20.
+In	this	case,	user-defined	default	constructor	will	be invoked when	an object obj of person	 class	 is created and	 the data members of that object, a and b,are initialized to	default	values 10 and	20.
+
 Parameterized constructor
 The	constructors	that	can	take	arguments	are	called	parameterized constructor.
 Example	code	:
 class Sum {
+
 int a,	b;
+
 public :
-Sum(int num1, int num2 )	{ 																		// parameterized constructor
+
+Sum(int num1, int num2 )	{ 																	
+
+// parameterized constructor
+
 a	= num1;
+
 b	= num2;
+
 }
+
 int getSum(){
+
 return	a	+	b;
+
 }
-								} ;
-								int main() {
-													Sum obj(4,	2);																									//parametrized	constructor invoked
+
+} ;
+					
+int main() {
+
+Sum obj(4,2);																									//parametrized	constructor invoked
 									}
-Declaring	a	constructor	with	arguments	hides	the	default	constructor.	Hence,	the	
-object declaration statement	such	as		
+Declaring	a	constructor	with	arguments	hides	the	default	constructor.	Hence,	the object declaration statement such	as		
 Person obj;
-may	not	work.	It	is	necessary	to	pass	the	initial	value	arguments	to	the	constructor	
-function	when	an	object	is	declared.	This	can	be	done	in	two	ways	:
-1. By	calling	constructor explicitly.
+
+may	not	work.	It	is	necessary	to	pass	the	initial	value	arguments	to	the	constructor function	when	an	object	is	declared.This can be done in two ways	:
+-1. By	calling	constructor explicitly.
 Sum obj = Sum(4 ,2) ;
-2. By	calling	constructor	implicitly.(as	illustrated	in	example	code)
+-2. By	calling	constructor	implicitly.(as	illustrated	in	example	code)
 Sum obj(4, 2) ;
-Destructors
-Just	as	the	objects	are	created,	so	are they destroyed.	If	a	class	can	have	constructor	
-to	set	things	up,	it should	have	a	destructor	to	destruct	the	objects.	A	destructor	as	
-the	name	itself	suggests,	is	used	to	destroy	the	objects	that	have	been	created	by	
-a	constructor.	A	destructor	is	also	a	member	function	whose	name	is	the	same	as	
-the	class	name	but	preceded	by	tilde	 ('~').	For	instance,	destructor	for	class	Sum	
-will	be	~Sum(	).
+
+*Destructors*
+Just	as	the	objects	are	created,	so	are they destroyed.	If	a	class	can	have	constructor to	set	things	up,	it should	have	a	destructor	to	destruct	the	objects.	A	destructor	as the	name itself suggests, is used to destroy	the	objects	that	have	been	created	by a constructor. A destructor	is also	a member function	whose	name	is	the	same	as	
+the	class	name but preceded by tilde ('~').	For instance, destructor for class Sum will be ~Sum( ).
 A	destructor	takes	no	arguments,	and	no	return	types	can	be	specified	for	it,	not	
-even	void.	It	is	automatically	called	by	the	compiler	when	an	object	is	destroyed.	A	
-destructor	frees	up the	memory	area	of	the	object	that	is	no	longer	accessible.
+even	void.	It is automatically called by the compiler when an object is destroyed.A destructor frees up the memory	area of the object that is no longer accessible.
 Example	code:
 class Sum {
 int a,	b;
 public :
-Sum(int num1, int num2 )	{																			// parameterized constructor
+
+Sum(int num1, int num2 )	
+{	
+// parameterized constructor
+
 cout <<	"Constructor	at	work"	<< endl;
+
 a	= num1;
+
 b	= num2;
+
 }
-~Sum(	){																																																	//destructor
+~Sum(	){																											
+//destructor
+
 cout<<	"Destructor	at	work"	<< endl;
+
 }
+
 int getSum(){
+
 return	a	+	b;
+
 }
 								}
-								int main() {
-													Sum obj(4, 6);																										
-									}
+								
+int main() {
+					
+Sum obj(4, 6);																		
+
+}
 Output	:		
 Constructor	at	work
 Destructor	at	work
-As	 soon	 as obj goes	 out	 of	 scope,	 destructor	 is	 called	 and obj is	
-destroyed releasing its	occupied	memory.
+As	 soon	 as obj goes out  of scope,destructor is called and obj is destroyed releasing its occupied memory.
 NOTE:		
-• If	 we	 fail	 to	 define	 a	 destructor	 for	 a	 class,	 the	 compiler	 automatically	
-generates	one	for	static	allocations.		
-• Destructors	are	invoked	in	the	reverse order	in	which	the	constructors	were	
-called.
-• Only	the	function	having access	to	the	constructor	and	destructor	of	a	class,
-can	define	objects	of	this	class	types	otherwise	compiler	reports	an	error.
-this keyword
+-• If	 we	 fail	 to	 define	 a	 destructor	 for	 a	 class,	 the compiler automatically	generates one for static allocations.		
+-• Destructors	are	invoked	in	the	reverse order	in	which	the	constructors	were	called.
+-• Only	the	function	having access	to	the	constructor	and	destructor	of	a	class, can	define	objects	of	this	class	types	otherwise	compiler	reports	an	error.
+
+# **this keyword**
 C++	 uses	 a	 unique	 keyword	 called this to	 represent	 an	 object	 that	 invokes	 a	
 member	function. this is	a	pointer	that	points	to	the	object	for	which	this	function	
 was called.	 For example,	 the function	 call	 for obj.getSum()	 will	 set	 the	
@@ -254,12 +283,16 @@ int a,	b;
 public :
 Sum(int a, int b )	{																			
 this->a = a;
+
 this->b = b;
+
 }
+
 int getSum(){
+
 return	a	+	b;
+
 }
 								}
-In	 the	constructor	of	 the	Sum class,	since the	data	members	and	data	members	
-have	 the	 same	 name, this	 keyword	 is	 used	 to	 differentiate	 between	 the	 two.	
+In the	constructor of the Sum class,	since the data	members	and	data	members	have  the same	name, this keyword  is	used to	 differentiate	 between the two.	
 Here, this->a refers	to	the	data	member a of the	object obj
