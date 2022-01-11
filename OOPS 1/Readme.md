@@ -25,6 +25,9 @@ allows	the	program	to	be closer	to	real	world	and	thereby	making it less complex
 Also it makes	the	software	reuse	feasible	and possible,	for	example, we	don't	want	
 to	 define	 a	 student every	 time we	 use	 it,	 hence	 using	 OOP,	 we	 just	 create	 the	
 blueprint	for	the	student	object and use	it whenever required.
+
+
+
 **Classes and objects**
 
 The	class	is	a single	most	important	C++	feature	that	implements	OOP	concepts	and	
